@@ -23,6 +23,8 @@ namespace Axon_Server
                 }
             }
 
+
+
             Console.Write("\nPulse cualquier tecla para salir...");
             Console.ReadKey();
         }

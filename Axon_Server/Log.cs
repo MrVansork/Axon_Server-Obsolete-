@@ -6,13 +6,17 @@ namespace Axon_Server
 {
     public static class Log
     {
+
+        #region Levels
         public const int Info    = 0x0001;
         public const int Debug   = 0x0010;
         public const int Warning = 0x0100;
         public const int Error   = 0x1000;
 
         private static int _flags   = 0x1101;
+        #endregion
 
+        #region Methods
         public static void add(int flag)
         {
             _flags += flag;
@@ -63,5 +67,6 @@ namespace Axon_Server
                 Console.ResetColor();
             }
         }
+        #endregion
     }
 }
