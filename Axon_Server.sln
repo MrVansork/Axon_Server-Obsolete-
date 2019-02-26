@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axon_Server", "Axon_Server\Axon_Server.csproj", "{64024C77-E69E-4D5B-953D-E33C166DDEC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Perceptron", "Perceptron\Perceptron.csproj", "{118E24A4-2A9B-45B9-9E69-E6FB07AC73E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64024C77-E69E-4D5B-953D-E33C166DDEC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64024C77-E69E-4D5B-953D-E33C166DDEC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64024C77-E69E-4D5B-953D-E33C166DDEC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64024C77-E69E-4D5B-953D-E33C166DDEC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{118E24A4-2A9B-45B9-9E69-E6FB07AC73E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{118E24A4-2A9B-45B9-9E69-E6FB07AC73E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{118E24A4-2A9B-45B9-9E69-E6FB07AC73E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{118E24A4-2A9B-45B9-9E69-E6FB07AC73E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D15BF50-E9FC-4B30-ADC6-2EEBBD593253}
+	EndGlobalSection
+EndGlobal
