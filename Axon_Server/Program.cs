@@ -8,10 +8,22 @@ namespace Axon_Server
         {
             Console.Write(Constants.BigTitle);
             Console.WriteLine("  Server");
-            Console.WriteLine("---------------------------------------------");
+            Console.WriteLine("---------------------------------------------\n");
 
+            foreach (string arg in args)
+            {
+                switch (arg)
+                {
+                    case "debug":
+                        Log.add(Log.Debug);
+                        break;
+                    default:
+                        Log.w("Program", $"'{arg}' is not recognized as an argument");
+                        break;
+                }
+            }
 
-            Console.Write("Pulse cualquier tecla para salir...");
+            Console.Write("\nPulse cualquier tecla para salir...");
             Console.ReadKey();
         }
     }
