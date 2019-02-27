@@ -2,7 +2,7 @@
   "profiles": {
     "Axon_Server": {
       "commandName": "Project",
-      "commandLineArgs": "debug hola"
+      "commandLineArgs": "debug"
     }
   }
 }

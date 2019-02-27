@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Perceptron
+namespace NNet
 {
     class Layer
     {
@@ -12,6 +12,7 @@ namespace Perceptron
         public Layer(int neuronsLength, int inputsLength)
         {
             _neurons = new Neuron[neuronsLength];
+            _outputs = new double[neuronsLength];
             for (int i = 0; i < neuronsLength; i++)
             {
                 _neurons[i] = new Neuron(inputsLength);
@@ -27,6 +28,8 @@ namespace Perceptron
 
             return _outputs;
         }
+
+        public Neuron[] GetNeurons() { return _neurons; }
 
     }
 }

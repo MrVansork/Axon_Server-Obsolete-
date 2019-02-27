@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Perceptron
+namespace NNet
 {
     public static class Utilities
     {
@@ -12,7 +12,7 @@ namespace Perceptron
 
         public static double Sigmoid(double value)
         {
-            return (value / Math.Sqrt(1 + Math.Pow(Math.E, -value)));
+            return 1 / (1 + Math.Exp(-value));
         }
 
         public static double DSigmoid(double value)
@@ -32,16 +32,5 @@ namespace Perceptron
         }
 
         #endregion
-
-        public static double Normalize(double value, double min, double max)
-        {
-            return (value - min) / (max - min);
-        }
-
-        public static double InverseNormalize(double value, double min, double max)
-        {
-            return value * (max - min) + min;
-        }
-
     }
 }

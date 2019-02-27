@@ -1,12 +1,38 @@
 ﻿using System;
 
-namespace Perceptron
+namespace NNet
 {
     public class Neuron
     {
-        private double[] _weights;
         private double _bias;
+        public double Bias
+        {
+            get
+            {
+                return _bias;
+            }
+            set
+            {
+                _bias = value;
+            }
+        }
+
+        private double[] _weights;
+        public double[] Weights{
+            get
+            {
+                return _weights;
+            }
+        }
+
         private double _lastActivation;
+        public double LastActivation
+        {
+            get
+            {
+                return _lastActivation;
+            }
+        }
 
         public Neuron(int inputs)
         {
@@ -26,6 +52,7 @@ namespace Perceptron
                 result += _weights[i] * inputs[i];
             }
 
+            _lastActivation = result;
             //TODO: Use the Function selected by the user
             return Utilities.Sigmoid(result);
         }

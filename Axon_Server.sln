@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axon_Server", "Axon_Server\Axon_Server.csproj", "{64024C77-E69E-4D5B-953D-E33C166DDEC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Axon.Server", "Axon_Server\Axon.Server.csproj", "{64024C77-E69E-4D5B-953D-E33C166DDEC7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{118E24A4-2A9B-45B9-9E69-E6FB07AC73E5} = {118E24A4-2A9B-45B9-9E69-E6FB07AC73E5}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Perceptron", "Perceptron\Perceptron.csproj", "{118E24A4-2A9B-45B9-9E69-E6FB07AC73E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Axon.NNet", "Perceptron\Axon.NNet.csproj", "{118E24A4-2A9B-45B9-9E69-E6FB07AC73E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axon.Util", "Axon.Util\Axon.Util.csproj", "{4274A884-1602-4E08-9C7C-1F11AC15A2B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +26,10 @@ Global
 		{118E24A4-2A9B-45B9-9E69-E6FB07AC73E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{118E24A4-2A9B-45B9-9E69-E6FB07AC73E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{118E24A4-2A9B-45B9-9E69-E6FB07AC73E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4274A884-1602-4E08-9C7C-1F11AC15A2B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4274A884-1602-4E08-9C7C-1F11AC15A2B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4274A884-1602-4E08-9C7C-1F11AC15A2B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4274A884-1602-4E08-9C7C-1F11AC15A2B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
